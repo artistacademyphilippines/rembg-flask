@@ -1,3 +1,10 @@
+'''
+DIGITAL OCEAN SETUP
+PORT: 8080
+BUILD COMMAND: none [or] pip install -requirements.txt
+RUN COMMAND: gunicorn --worker-tmp-dir /dev/shm --timeout 2400 [subdirectory].[python file name]:[name of flask instance inside python file]
+'''
+
 from flask import Flask, request
 from flask_cors import CORS
 from rembg import remove
